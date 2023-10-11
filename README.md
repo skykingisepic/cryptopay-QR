@@ -18,3 +18,8 @@ https://cryptopay.domain?receive_address - use this form of URL with a query str
 https://cryptopay.domain?receive_address\*inv/memo\*amount - this will populate all data fields from the URL delimited with '*' and all will be persistent. To reset, just use https://cryptopay.domain.
 
 Note: The amount field should bring up the Numeric Keypad on mobiles.
+
+# Installation:
+
+clone repo and unzip the libfiles in the folder (Creates phpcode and vendor folders required to run cryptoqr.php)
+
