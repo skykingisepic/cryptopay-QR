@@ -21,5 +21,5 @@ Note: The amount field should bring up the Numeric Keypad on mobiles.
 
 # Installation:
 
-clone repo and unzip the libfiles in the folder (Creates phpcode and vendor folders required to run cryptoqr.php)
+clone repo and unzip the libfiles in the folder (Creates phpqrcode and vendor folders required to run cryptoqr.php)
 
