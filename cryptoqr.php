@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="description" content="Epicenter QRcode Generator">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
-<title>Epicenter QRcode Generator</title>
+<title>Crypto QRcode Generator</title>
 </head>
 
 <style>
@@ -119,20 +119,21 @@ if(array_key_exists('gen',$_POST)){
   ->setForegroundColor(new Color(0, 0, 0))
   ->setBackgroundColor(new Color(214, 159, 78));
 
-  // (B4) ATTACH LOGO
-  $logo = Logo::create(__DIR__ . "/Epic-icon-black-bg.jpg")
+  // (B4) ATTACH LOGO (placed in middle of QRcode image)
+  $logo = Logo::create(__DIR__ . "/yourlogo.jpg")
   ->setResizeToWidth(30);
 
-  // (B5) ATTACH LABEL
+  // (B5) ATTACH LABEL (text at bottom of QRcode image)
   // $label = Label::create($a)
   // ->setTextColor(new Color(0, 0, 0));
 
-  // (C) OUTPUT QR CODE
+  // (C) OUTPUT QR CODE (set to include logo and label)
   $writer = new PngWriter();
   // $result = $writer->write($qr, $logo, $label);
   $result = $writer->write($qr, $logo);
   //header("Content-Type: " . $result->getMimeType());
   //echo $result->getString();
+  //display on same page
   echo "<img src='{$result->getDataUri()}'>";
 }
 ?>
