@@ -25,3 +25,9 @@ Note: The amount field should bring up the Numeric Keypad on mobiles.
 
 clone repo and unzip the libfiles in the folder (Creates phpqrcode and vendor folders required to run cryptoqr.php)
 
+# Deployment:
+
+Copy cryptoqr.php, your icon file (if used), and the two folders (vendor and phpqrcode) to a new /var/www/cryptoqr folder your web server. Set up a virtual server and set SSL if desired, and create a DNS 'A Record' pointing to cryptoqr.yourdomain if you need to publish this publically. You can also run 'sudo php -S 0.0.0.0:80 -t /path-to-repofolder' from the cloned repo folder for testing locally referencing http://localhost/cryptoqr.php from any local browser.
+
+
+
