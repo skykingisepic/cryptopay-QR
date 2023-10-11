@@ -5,9 +5,11 @@ Library files downloaded from https://sourceforge.net/projects/phpqrcode/
 
 The PHP QR Code library files are open source (LGPL) for generating QR Code, 2-dimensional barcode. Based on libqrencode C library, provides API for creating QR Code barcode images (PNG, JPEG thanks to GD2). Implemented purely in PHP.
 
-A Payment Processing System framework. This will allow merchants (or anyone requiring a payment in Crypto) to generate a formatted QRcode that contains their receive address, invoice or memo, and amount delimited by '*' in a text string. Crypto wallets should create a 'Pay' option where the app will scan the QRcode and parse the address, invoice, and amount then auto-fill these fields on the Send page to complete the transaction. The invoice/memo will be stored in the memo for historical reference. Also helpful to append the current fiat currency value of the Crypto used in the transaction to the memo invoice giving the user an historical reference to the amount in fiat needed to compute any capital gains tax (for the US).
+A Payment Processing System framework. This will allow merchants (or anyone requiring a payment in Crypto) to generate a formatted QRcode that contains their receive address, invoice or memo, and amount delimited by '*' in a text string.
 
-Using cryptopay for Payment QRcodes:
+Crypto wallets should create a 'Pay' option where the app will scan the generated QRcode and parse the address, invoice, and amount then auto-fill these fields on the Send page to complete the transaction. The invoice/memo will be stored in the wallet's memo field (if available) for historical reference. Also helpful to append the calculated current fiat currency value of the Crypto used in the transaction to the memo invoice giving the user an historical reference to the amount in fiat needed to compute any capital gains tax (for the US or any other taxing authorities).
+
+<b>Using cryptopay for Payment QRcodes:</b>
 
 You use a browser to access the cryptopay QRcode generator. It is configured to accept the following URL formats:
 
