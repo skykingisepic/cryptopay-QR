@@ -17,7 +17,7 @@ https://cryptopay.domain - allows manual entry of receive address, invoice/memo,
 
 https://cryptopay.domain?receive_address - use this form of URL with a query string and it will make your receive address persistent between code generations. This is good for merchants to have running on a spare phone or tablet at checkout so all they have to do between transactions is update the invoice and amount without re-entering the receive address.
 
-https://cryptopay.domain?receive_address\*inv/memo\*amount - this will populate all data fields from the URL delimited with '*' and all will be persistent. To reset, just use https://cryptopay.domain.
+https://cryptopay.domain?receive_address*inv/memo*amount - this will populate all data fields from the URL delimited with '*' and all will be persistent. To reset, just use https://cryptopay.domain.
 
 Note: The amount field should bring up the Numeric Keypad on mobiles.
 
